@@ -1,0 +1,359 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Maven Pro", sans-serif;
+  font-optical-sizing: auto;
+  background-color: azure;
+}
+#menu {
+    display:none;
+}
+.slicknav_menu {
+    display: none;
+}
+@media (max-width: 992px) {
+    #desktop_menu  {
+        display:none;
+    }
+     .slicknav_menu {
+        display:block;
+    }
+    .nav {
+      flex-direction: column;
+      padding-left: 20px;
+    }
+}
+ 
+#desktop_menu  {
+   line-height: 80px;
+   position: fixed;
+   left: 0px;
+   right: 0px;
+   box-shadow: 0px 3px 5px #ccc;
+   z-index: 10000;
+   background-color: #141414;
+    }
+
+    #desktop_menu   .logo {
+        float: left;
+        padding-left: 50px;
+    }
+    #desktop_menu .nav {
+        float: right;
+        padding-right: 40px;
+    }
+    #desktop_menu .logo a{
+     text-decoration: none;
+     font-size: 32px;
+     font-weight: 600;
+     }
+     #desktop_menu .nav a{
+    text-decoration: none;
+   }
+   #desktop_menu .nav a:hover {
+    color: rgb(106, 106, 253);
+   }
+   #desktop_menu .nav span {
+    padding-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+  }
+  .hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    z-index: -1;
+  }
+  .hero .container {
+    position: relative;
+    z-index: 1;
+  }
+  .hero h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .hero p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .myproject {
+    margin-top: 25px;
+    padding-left: 160px;
+    padding-right: 160px;
+    box-sizing: border-box;
+  }
+
+  .myproject p{
+    color: rgb(44, 44, 128);
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
+  .myskills h4 {
+    margin-top: 35px;
+    text-align: center;
+    color: #4c42e0;
+  }
+
+  .aboutme h2 {
+    margin-top: 30px;
+    text-align: center;
+    color: #4c42e0;
+  }
+
+  .aboutme p {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    color: #362fa0;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+  }
+
+  .projects h2 {
+    text-align: center;
+    color: #4c42e0;
+  }
+  .projects p {
+    margin-top: 25px;
+    text-align: center;
+    color: #3830b1;
+    font-weight: 500;
+  }
+  .hero_box {
+    margin-top: 25px;
+    display: flex;
+  }
+  .main_boxes {
+    width: 33.33%;
+  }
+  .figma , .photoshop , .coding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figma   a {
+  font-weight: 500;
+  
+}
+.photoshop  a {
+  font-weight: 500;
+  
+}
+.coding   a {
+  font-weight: 500;
+  
+}
+
+@media(max-width: 992px) {
+  .hero_box {
+    display: flex;
+    flex-direction: column;
+  }
+  .main_boxes {
+    width: 100%;
+    
+  }
+}
+
+/* Style Photoshop's .projects */
+
+h1 {
+  color: rgb(29, 148, 29);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .child {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main .set1 img {
+  width: 75%;
+  margin-top: 50px;
+}
+.main .set2 img {
+  width: 70%;
+  margin-top: 100px;
+}
+.main .set3 img {
+  width: 70%;
+  margin-top: 100px;
+}
+.main .set4 img {
+  width: 20%;
+  margin-top: 100px;
+}
+
+.main .set5 img {
+  width: 25%;
+  margin-top: 100px;
+}
+.main .set6 img {
+  width: 70%;
+  margin-top: 100px;
+}
+.main .set7 img {
+  width: 70%;
+  margin-top: 100px;
+}
+
+@media (max-width: 992px) {
+  .main .set1 img {
+    width: 90%;
+    margin-top: 50px;
+  }
+  .main .set2 img {
+    width: 90%;
+    margin-top: 100px;
+  }
+  .main .set3 img {
+    width: 90%;
+    margin-top: 100px;
+  }
+  .main .set4 img {
+    width: 35%;
+    margin-top: 100px;
+  }
+  
+  .main .set5 img {
+    width: 40%;
+    margin-top: 100px;
+  }
+  .main .set6 img {
+    width: 90%;
+    margin-top: 100px;
+  }
+  .main .set7 img {
+    width: 90%;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 668px) {
+  .main .set4 img {
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+  .main .set5 img {
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+
+/* Figma projects  */
+
+.figma_main1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.figma_image1 {
+  width: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:  20px 60px 30px 420px;
+}
+
+.figma_image1 img {
+  width: 100%;
+}
+.figma_image2 {
+  width: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 420px 30px 60px;
+}
+
+.figma_image2 img {
+  width: 100%;
+}
+.figma h1 {
+  color: rgb(29, 148, 29);
+  text-align: center;
+  margin-top: 30px;
+}
+
+ h3 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  word-spacing: 0.2px;
+  letter-spacing: 0.1px;
+ }
+
+ .figma_link p {
+  text-align: center;
+  margin-top: 20px;
+ }
+
+ .figma_main2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.figma_image3 {
+  width: 50%;
+  padding: 20px 80px 0px 80px; 
+}
+
+.figma_image3 img{
+  width: 100%;
+}
+
+.back {
+  height: 5px;
+  width: 600px;
+  background-color: #ccc;
+
+}
+.front {
+  height: 5px;
+  width: 0;
+  background-color: #ec1e1e;
+}
